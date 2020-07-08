@@ -1,0 +1,126 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    background: #eee;
+    border-bottom: solid 1px #ddd;
+  
+}
+
+.container {
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+}
+
+span {
+    font-size: 25px;
+    border-right: solid 1px #ddd;
+    padding: 10px 30px;
+}
+
+.web-menu ul {
+    display: flex;
+    padding: 40px;
+}
+
+
+.web-menu ul li {
+    margin: auto;
+    list-style: none;
+    font-size: 16px;
+
+}
+
+.web-menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #aaa;
+    padding: 10px
+}
+
+.web-menu ul li a:hover {
+    color: #000;
+}
+
+.selected span {
+    color: #000;
+}
+.car {
+    margin: auto 0;
+}
+
+.car img:hover {
+    border: solid 2px #000;
+}
+
+.car img {
+    width: 40px;
+    cursor: pointer;
+    border: solid 2px #ccc;
+    padding: 0px 15px;
+    border-radius: 30px;
+}
+
+.title {
+    margin: 20px auto;
+    color: #aaa;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.title::before,
+.title::after {
+    content: '';
+    display: inline-block;
+    width: 120px;
+    height: 20px;
+    border-top: solid 1px #ddd;
+    margin: 0px 20px
+}
+.models {
+    display: none;
+}
+
+.container-item {
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 80px;
+     margin:auto;
+}
+
+.boticario-item {
+    margin: 10px;
+    padding: 20px;
+    background: #F5F7F9;
+    border: solid 2px #aaa;
+}
+
+.boticario-item--img img {
+    width: 250px;
+}
+
+.boticario-item--name {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #aaa;
+}
+
+.boticario-item--price {
+    
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #aaa;
+}
