@@ -5,24 +5,20 @@
 }
 
 .header {
-    background: #eee;
-    border-bottom: solid 1px #ddd;
-  
+    background: #B1C1C1;
+    border-bottom: solid 1px #617283;
+
 }
 
 .container {
     max-width: 1000px;
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
+    margin: 0 auto;
     justify-content: space-between;
 }
 
-span {
-    font-size: 25px;
-    border-right: solid 1px #ddd;
-    padding: 10px 30px;
-}
+/* AREA DO MEU */
 
 .web-menu ul {
     display: flex;
@@ -31,7 +27,7 @@ span {
 
 
 .web-menu ul li {
-    margin: auto;
+    margin: auto 0;
     list-style: none;
     font-size: 16px;
 
@@ -40,36 +36,78 @@ span {
 .web-menu a {
     text-decoration: none;
     text-transform: uppercase;
-    color: #aaa;
-    padding: 10px
+    color: #617283;
+    margin-right: 10px;
+    padding: 10px;
 }
 
 .web-menu ul li a:hover {
-    color: #000;
+    color: #FFF;
+}
+
+span {
+    font-size: 25px;
+    padding: 10px 15px 10px 0px;
+    border-right: solid 1px #ddd;
+
 }
 
 .selected span {
-    color: #000;
-}
-.car {
-    margin: auto 0;
+    color: #FFF;
 }
 
-.car img:hover {
-    border: solid 2px #000;
+.car {
+    padding: 10px;
+    margin: auto 10px;
+    display: flex;
+    border: solid 2px #617283;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.car:hover {
+    border: solid 2px #FFF;
 }
 
 .car img {
     width: 40px;
     cursor: pointer;
-    border: solid 2px #ccc;
-    padding: 0px 15px;
-    border-radius: 30px;
+
 }
+
+.quantity-car {
+    color: #FFF
+}
+
+/* menu mobile */
+
+h2 {
+    display: none;
+
+}
+
+
+
+@media (max-width: 840px) {
+    .web-menu {
+        display: none;
+    }
+
+    h2 {
+        display: flex;
+        font-size: 30px;
+        font-weight: 500;
+        margin: auto 20px;
+        color: #fff
+    }
+}
+
+
+/*  AREA TITULO */
 
 .title {
     margin: 20px auto;
-    color: #aaa;
+    color: #617283;
     text-transform: uppercase;
     font-weight: 400;
     font-size: 25px;
@@ -84,27 +122,56 @@ span {
     border-top: solid 1px #ddd;
     margin: 0px 20px
 }
+
+@media (max-width: 840px) {
+
+    .title::before,
+    .title::after {
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-top: solid 2px #ddd;
+        margin: 0px 20px
+    }
+}
+
+
+/* AREA MODELS */
 .models {
     display: none;
 }
 
-.container-item {
-    max-width: 1000px;
+.container-item--area {
+    width: 1000px;
     display: flex;
     flex-wrap: wrap;
-    padding-left: 80px;
-     margin:auto;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 .boticario-item {
     margin: 10px;
     padding: 20px;
-    background: #F5F7F9;
-    border: solid 2px #aaa;
+    background: #B1C1C1;
 }
 
 .boticario-item--img img {
     width: 250px;
+}
+
+.add-item {
+    position: absolute;
+    background: #617283;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-left: 106px;
+    margin-top: -40px;
 }
 
 .boticario-item--name {
@@ -114,7 +181,7 @@ span {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 600;
-    color: #aaa;
+    color: #617283;
 }
 
 .boticario-item--price {
@@ -123,9 +190,10 @@ span {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 600;
-    color: #aaa;
+    color: #617283;
 }
 
+/* AREIA MODAL */
 .boticario-modal {
     height: 100vh;
     width: 100%;
@@ -149,6 +217,7 @@ span {
 
 .boticario-modal--img img {
     height: 300px;
+    box-shadow: 2px 2px 5px black;
 }
 
 .boticario-modal--name {
@@ -198,18 +267,22 @@ span {
     background: greenyellow;
     padding: 20px;
     border-radius: 50px;
+    cursor: pointer;
 }
 
 .boticario-remove--item {
     background: red;
     padding: 20px;
     border-radius: 50px;
+    cursor: pointer;
 }
 .fechar-modal{
     position: absolute;
-    display: inline-block;
+    display: flex;
     top: 0;
     right: 0;
+    align-items: center;
+    justify-content: center;
     margin-top: -20px;
     margin-right: -20px;
     width: 50px;
@@ -217,78 +290,7 @@ span {
     text-align: center;
     border-radius: 100%;
     background-color: red;
-}
-.fechar-modal p {
-    margin-top: 10px;
-    font-size: 20px;
-}
+    cursor: pointer;
+    box-shadow: 2px 2px 5px black;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* menu mobile */
-/* .button {
-    display: none;
-} */
-@media (max-width: 770px) {
-    /* .button {
-        display: flex;
-        background-color:#000 ;
-        border: none;
-        border-radius:10px;
-        color:#fff;
-        padding: 10px;
-        margin: 10px;
-        font-family: 'Poppins', sans-serif;
-        text-transform: uppercase;
-        font-weight: 500;
-        align-items: center;
-        cursor:pointer;
-        z-index: 400;
-
-    } */
-    /* .button::before{
-        content: '';
-        display: inline-block;
-        height: 2px;
-        width: 12px;
-        background: #fff;
-        box-shadow: 0 4px #fff, 0 -4px #fff;
-        margin-right: 5px;
-    } */
-    span{
-        font-size: 15px;
-        border:none;
-        padding:0px;
-    }
-    .web-menu a   {
-        font-size: 14px;
-        padding: 4px;
-       
-    }
-    .car  {
-        margin: auto;
-        
-        
-    }
-    .title::before,
-    .title::after {
-    content: '';
-    display: inline-block;
-    width: 70px;
-    height: 20px;
-    border-top: solid 1px #ddd;
-    margin: 0px 20px
-}
 }

@@ -11,10 +11,10 @@
 </head>
 
 <body>
+    <!-- MENU PRINCIPAL -->
     <header class="header">
         <div class="container">
-
-            <div class="web-menu">
+            <nav class="web-menu">
                 <ul>
                     <li class="selected"><a href="#"><span>Minha loja</span></a></li>
                     <li><a href="#">Perfume</a></li>
@@ -22,55 +22,58 @@
                     <li><a href="#">Cabelos</a></li>
                     <li><a href="#">Infantil</a></li>
                 </ul>
-            </div>
+            </nav>
+            <h2>Minha loja</h2>
+            <!-- CARRINHO -->
             <div class="car">
-                <img src='./img/car.png'>
+                <div class="quantity-car">R$ 000</div> <img src='./img/car.png '>
             </div>
         </div>
     </header>
-
-    <section class="container">
+    <main class="container">
         <h1 class="title">Últimos produtos</h1>
-    </section>
+        <div class="container-item--area"></div> <!-- AQUI VAI OS ITEMS -->
+    </main>
 
-    <section class="container-item">
-        <div class="models">
-            <div class="boticario-item">
-                <a href="">
-                    <div class="boticario-item--img"><img src="" /></div>
-                </a>
-                <div class="boticario-item--name">nome</div>
-                <div class="boticario-item--price">R$ --</div>
-            </div>
-        </div>
-    </section>
-
-
+    <!-- AREA MODAL -->
     <section class="boticario-modal">
         <div class="modal">
             <div class="boticario-modal--img"><img
-                    src="https://boticario.vteximg.com.br/arquivos/ids/195945/Crazy_Feelings_Desodorante_Colonia_Boticollection_100ml_71877_frontal.jpg?v=636760814659370000" />
+                    src="" />
             </div>
             <div class="boticario-modal--info">
                 <div class="fechar-modal">
                     <p>X</p>
                 </div>
-                <div class="boticario-modal--name">Crazy Feelings Des. Colônia Boticollection</div>
-                <div class="boticario-modal--price">price</div>
+                <div class="boticario-modal--name">name</div>
+                <div class="boticario-modal--price">R$--</div>
                 <div class="boticario-quantity">
                     <button class="boticario-less">-</button>
-                    <div class="n">1</div>
+                    <div class="item-quantity">1</div>
                     <button class="boticario-more">+</button>
                 </div>
                 <div class="boticario-buttons">
                     <div class="boticario-add--item">Adicionar</div>
                     <div class="boticario-remove--item">Cancelar</div>
                 </div>
-
             </div>
         </div>
-
     </section>
+
+    <!-- MODELOS DOS ITEMS -->
+    <div class="models">
+        <div class="boticario-item">
+            <a href="">
+                <div class="boticario-item--img"><img
+                        src="https://boticario.vteximg.com.br/arquivos/ids/195945/Crazy_Feelings_Desodorante_Colonia_Boticollection_100ml_71877_frontal.jpg?v=636760814659370000" />
+                </div>
+            </a>
+            <div class="add-item">+</div>
+            <div class="boticario-item--name">name</div>
+            <div class="boticario-item--price">R$ --</div>
+        </div>
+    </div>
+
     <script src="js/script.js"></script>
 </body>
 
