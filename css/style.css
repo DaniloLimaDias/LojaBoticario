@@ -56,9 +56,16 @@ span {
     color: #FFF;
 }
 
+/* AREA CARRINHO */
+
+.car-shopping {
+     margin: auto 10px;
+    text-decoration: none;
+    color: #FFF;
+}
+
 .car {
     padding: 10px;
-    margin: auto 10px;
     display: flex;
     border: solid 2px #617283;
     border-radius: 50%;
@@ -198,13 +205,13 @@ h2 {
     height: 100vh;
     width: 100%;
     background: rgba(0,0,0,.5);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    z-index: 2000;
     display: none;
     justify-content: center;
     align-items: center;
+    transition: all ease .5s;
 }
 
 .modal {
