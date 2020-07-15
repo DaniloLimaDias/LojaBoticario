@@ -50,3 +50,18 @@ fetch('./dados.json')
     cs('.fechar-modal, .boticario-remove--item').forEach((item)=>{
         item.addEventListener('click', closeModal);
     })
+
+    c('.boticario-more').addEventListener('click',() =>{
+        modalQt++
+        c('.item-quantity').innerHTML = modalQt;
+    })
+
+    c('.boticario-less').addEventListener('click',() =>{
+        if(modalQt > 1){
+        modalQt--
+        c('.item-quantity').innerHTML = modalQt;
+    }else{
+        closeModal()
+    }
+
+    })
